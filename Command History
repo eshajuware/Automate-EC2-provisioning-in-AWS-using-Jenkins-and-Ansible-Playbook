@@ -1,0 +1,60 @@
+root@ip-172-31-22-244:/home/ubuntu# history
+    1  2026-09-24 05:15:46 history 
+    2  2026-09-24 05:18:41 cat >> ~/.bashrc << 'EOF'
+shopt -s histappend
+export HISTSIZE=10000
+export HISTFILESIZE=20000
+export HISTTIMEFORMAT="%F %T "
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+EOF
+
+    3  2026-09-24 05:18:41 source ~/.bashrc
+    4  2026-09-24 05:43:48 ls
+    5  2026-09-24 06:01:45 history
+    6  2026-09-24 06:02:05 vi jenkins.sh
+    7  2026-09-24 06:02:45 sudo chmod 777 jenkins.sh
+    8  2026-09-24 06:02:45 ./jenkins.sh    # this will installl jenkins
+    9  2026-09-24 06:03:28 sudo systemctl start jenkins
+   10  2026-09-24 06:22:22 vi jenkins.sh
+   11  2026-09-24 06:26:47 chmod +x jenkins.sh
+   12  2026-09-24 06:26:47 sudo ./jenkins.sh
+   13  2026-09-24 06:30:17 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   14  2026-09-24 06:32:12 vi trivy.sh
+   15  2026-09-24 06:33:20 sudo apt-get update
+   16  2026-09-24 06:33:35 sudo apt install software-properties-common
+   17  2026-09-24 06:35:36 sudo apt install -y ansible
+   18  2026-09-24 06:36:00 ansible --version
+   19  2026-09-24 06:36:15 sudo apt install -y python3-boto3 python3-botocore
+   20  2026-09-24 06:36:32 ansible-galaxy collection install amazon.aws
+   21  2026-09-24 06:36:59 sudo add-apt-repository --yes --update ppa:ansible/ansible
+   22  2026-09-24 06:37:30 sudo apt install python3
+   23  2026-09-24 06:37:46 sudo apt install ansible -y
+   24  2026-09-24 06:38:34 sudo apt install ansible-core
+   25  2026-09-24 06:39:01 ansible --version
+   26  2026-09-24 06:39:11 sudo apt install python3-pip -y
+   27  2026-09-24 06:39:14 ( this is just comment -  Package manager for python)Install Boto Framework - AWS SDKsudo pip3 install boto boto3
+   28  2026-09-24 06:39:45 sudo pip3 install boto boto3
+   29  2026-09-24 06:40:14 history
+   30  2026-09-24 06:43:05 git clone https://github.com/Aj7Ay/ANSIBLE.git
+   31  2026-09-24 06:47:16 chmod +x trivy.sh
+   32  2026-09-24 06:47:16 sudo ./trivy.sh
+   33  2026-09-24 06:49:56 sudo pip3 install boto boto3
+   34  2026-09-24 06:50:28 apt install
+   35  2026-09-24 06:50:35 sudo pip3 install boto boto3
+   36  2026-09-24 06:50:57 sudo apt install python3-xyz
+   37  2026-09-24 06:51:47 python3 -c "import boto3, botocore; print(boto3.__version__)"
+   38  2026-09-24 06:52:24 sudo pip3 install boto boto3
+   39  2026-09-24 06:52:42 sudo apt-get install python3-boto -y
+   40  2026-09-24 06:52:43 pip list boto | grep boto
+   41  2026-09-24 06:53:15 chmod +x trivy.sh
+   42  2026-09-24 06:53:34 sudo ./trivy.sh
+   43  2026-09-24 06:57:52 chmod +x trivy.sh
+   44  2026-09-24 06:57:55 sudo ./trivy.sh
+   45  2026-09-24 06:58:37 sudo apt-get install python3-boto -y
+   46  2026-09-24 06:58:37 pip list boto | grep boto
+   47  2026-09-24 07:08:48 sudo apt-get install python3-boto -y
+   48  2026-09-24 07:08:48 pip list boto | grep boto
+   49  2026-09-24 07:09:23 which ansible
+   50  2026-09-24 07:13:11 sudo -u jenkins ansible --version
+   51  2026-09-24 07:13:12 ansible-galaxy collection list | grep amazon.aws
+   52  2026-09-24 07:31:17 history
